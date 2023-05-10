@@ -59,12 +59,13 @@ const RegisterForm = () => {
     return (
         <Form onSubmit={handleSubmit}>
             <Form.Group controlId="name">
-                <Form.Label>Name:</Form.Label>
+                <Form.Label style={{ color: 'white' }}>Name:</Form.Label>
                 <Form.Control
                     type="text"
                     value={name}
                     onChange={(event) => setName(event.target.value)}
                     required
+                    style={{ width: '30%', margin:'auto' }}
                 />
                 {nameError && (
                     <Alert variant="danger">
@@ -72,21 +73,23 @@ const RegisterForm = () => {
                     </Alert>)}
             </Form.Group>
             <Form.Group controlId="email">
-                <Form.Label>Email:</Form.Label>
+                <Form.Label style={{ color: 'white' }}>Email:</Form.Label>
                 <Form.Control
                     type="email"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
                     required
+                    style={{ width: '30%', margin:'auto' }}
                 />
             </Form.Group>
             <Form.Group controlId="password">
-                <Form.Label>Password:</Form.Label>
+                <Form.Label style={{ color: 'white' }}>Password:</Form.Label>
                 <Form.Control
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}
                     required
+                    style={{ width: '30%', margin:'auto' }}
                 />
                 {passwordError && (
                     <Alert variant="danger">
@@ -96,12 +99,13 @@ const RegisterForm = () => {
                 )}
             </Form.Group>
             <Form.Group controlId="confirmPassword">
-                <Form.Label>Confirm Password:</Form.Label>
+                <Form.Label style={{ color: 'white' }}>Confirm Password:</Form.Label>
                 <Form.Control
                     type={showPassword ? 'text' : 'password'}
                     value={confirmPassword}
                     onChange={(event) => setConfirmPassword(event.target.value)}
                     required
+                    style={{ width: '30%', margin:'auto' }}
                 />
                 {confirmPasswordError && (
                     <Alert variant="danger">Passwords do not match.</Alert>

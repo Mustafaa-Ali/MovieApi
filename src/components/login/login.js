@@ -51,29 +51,31 @@ function LoginForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formEmail">
-        <Form.Label>Email:</Form.Label>
+      <Form.Group controlId="formEmail" className="mx-auto">
+        <Form.Label style={{ color: 'white' }}>Email:</Form.Label>
         <Form.Control
           type="email"
           placeholder="Enter email"
           value={email}
           onChange={handleEmailChange}
           isInvalid={emailError !== ''}
+          style={{ width: '30%', margin:'auto' }}
         />
         <Form.Control.Feedback type="invalid">
           {emailError}
         </Form.Control.Feedback>
       </Form.Group>
 
-      <Form.Group controlId="formPassword">
-        <Form.Label>Password:</Form.Label>
-        <div className="input-group">
+      <Form.Group controlId="formPassword" className="mx-auto">
+        <Form.Label style={{ color: 'white' }}>Password:</Form.Label>
+        <div className="input-group" style={{ width: '30%', margin:'auto' }}>
           <Form.Control
             type={showPassword ? 'text' : 'password'}
             placeholder="Enter password"
             value={password}
             onChange={handlePasswordChange}
             isInvalid={passwordError !== ''}
+            
           />
           <Button
             variant="outline-secondary"
@@ -86,9 +88,9 @@ function LoginForm() {
         <Form.Control.Feedback type="invalid">
           {passwordError}
         </Form.Control.Feedback>
-      </Form.Group><br/>
+      </Form.Group><br />
 
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" className="mx-auto">
         Log In
       </Button>
     </Form>

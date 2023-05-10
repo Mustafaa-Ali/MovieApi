@@ -26,7 +26,7 @@ const TodoList = () => {
     <Container className="mt-4">
       <Row>
         <Col>
-          <h1>To-Do List</h1>
+          <h1 style={{ color: 'white' }}>To-Do List</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="newTask">
               <Form.Control
@@ -35,6 +35,7 @@ const TodoList = () => {
                 value={newTask}
                 onChange={(event) => setNewTask(event.target.value)}
                 required
+                
               />
             </Form.Group><br/>
             <Button variant="primary" type="submit">
