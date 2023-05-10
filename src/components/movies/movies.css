@@ -1,0 +1,23 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: #312266;
+  }
+  
+  .paginationContainer {
+    margin-top: 2rem;
+  }
+  
+  .search-bar {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color;
+  }
+  
