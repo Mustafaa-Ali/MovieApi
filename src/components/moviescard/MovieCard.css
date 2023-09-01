@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-/*   height: 100vh; /* This ensures the card takes up the full viewport height */ */
+
 }
 .card {
     width: 18rem;
