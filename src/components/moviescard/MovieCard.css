@@ -17,9 +17,6 @@
     overflow: hidden;
     transition: all 0.2s ease-in-out;
     background-color: #b1b1b1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .card:hover {
