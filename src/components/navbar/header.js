@@ -28,7 +28,7 @@ function Header() {
         </Navbar.Collapse>
         <span style={{color: 'red', fontSize:'22px'}}>&hearts;</span>&nbsp;
         <span style={{color: 'white'}}>{count}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span style={{color: 'white'}} onClick={()=>setLanguage((Language=='ar')?'en':'ar')}>{Language}</span>
+        // <span style={{color: 'white'}} onClick={()=>setLanguage((Language=='ar')?'en':'ar')}>{Language}</span>
       </Container>
     </Navbar>
       
