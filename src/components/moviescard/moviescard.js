@@ -34,7 +34,7 @@ const MovieCard = ({ movie, onViewDetails }) => {
   );
 
   return (
-    
+    <div className="card-container">
       <Card className='m-3'>
         <div className='favorite-icon'>
           {heartIcon}
@@ -49,7 +49,7 @@ const MovieCard = ({ movie, onViewDetails }) => {
           <Button variant='primary' onClick={() => onViewDetails(movie)}>View Details</Button>
         </Card.Body>
       </Card>
-    
+    </div>
   );
 };
 
