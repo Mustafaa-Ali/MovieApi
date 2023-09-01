@@ -52,16 +52,15 @@
 /* Pagination styles for smaller screens */
 @media (max-width: 768px) {
   .pagination {
-/*     flex-direction: column; */
-    align-items: center;
+    justify-content: space-between; /* Space between "Previous" and "Next" buttons */
   }
 
-  .pagination li {
-    margin: 0.5rem 0;
+  .pagination li:not(:first-child):not(:last-child) {
+    display: none; /* Hide page numbers except for the first and last items */
   }
 
   .pagination a {
-    padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+    padding: 0.5rem 1rem;
   }
 }
 
