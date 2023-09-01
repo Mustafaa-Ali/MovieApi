@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 2rem;
     background-color: #312266;
+    justify-content: center
   }
   
   .paginationContainer {
