@@ -52,7 +52,7 @@
 /* Pagination styles for smaller screens */
 @media (max-width: 768px) {
   .pagination {
-    flex-direction: column;
+/*     flex-direction: column; */
     align-items: center;
   }
 
