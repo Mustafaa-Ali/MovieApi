@@ -21,9 +21,7 @@ function Header() {
           <Nav >
             <Nav.Link as={Link} to="/movies">Movies</Nav.Link>
             <Nav.Link as={Link} to="/favorite">Favourites</Nav.Link>
-            // <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            // <Nav.Link as={Link} to="/register">Register</Nav.Link>
-            // <Nav.Link as={Link} to="/todo">To-Do</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
         <span style={{color: 'red', fontSize:'22px'}}>&hearts;</span>&nbsp;
